@@ -1,0 +1,19 @@
+######################
+# ##### 配置文件    ##### #
+# ################## # 
+  # 设置服务名 
+spring:
+  application:
+    name: Cx_Erueka_Server
+  # 设置服务端口
+server:
+  port: 8761
+  # 设置hostname
+eureka: 
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false #防止注册中心自我注册
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 注册地址

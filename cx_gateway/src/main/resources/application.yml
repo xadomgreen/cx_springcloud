@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8769
+spring:
+  application:
+    name: cx-gateway
+zuul:
+  routes:
+    cx-rebbon: 
+      path: /rebbon/**
+      service-id: Cx-Ribbon
+    cx-feign:
+      path: /feign/**
+      service-id: cx-feign
