@@ -8,6 +8,11 @@
 	</parent>
 	<artifactId>cx_customer_service</artifactId>
 	<dependencies>
+		<!-- 配置服务中心 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>cn.com.cx</groupId>
 			<artifactId>cx_common</artifactId>
@@ -17,6 +22,36 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
+		<!-- 消息总线 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+		</dependency>
+
+		<!-- springcloud 授权服务 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-oauth2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>cn.com.cx</groupId>
+			<artifactId>cx_customer_model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.alibaba</groupId> -->
+<!-- 			<artifactId>fastjson</artifactId> -->
+<!-- 		</dependency> -->
 	</dependencies>
 	<!-- spring-boot的maven插件 -->
 	<build>

@@ -94,5 +94,8 @@
 		<module>cx_feign</module>
 		<module>cx_gateway</module>
 		<module>cx_config_server</module>
+		<module>cx_customer_web</module>
+		<module>cx_customer_model</module>
+		<module>cx-oauth2-server</module>
 	</modules>
 </project>

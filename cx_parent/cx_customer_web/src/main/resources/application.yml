@@ -1,0 +1,16 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8860
+spring:
+  application:
+    name: Xc-Customer-Web
+  thymeleaf: 
+    prefix: classpath:/templates/
+    mode: LEGACYHTML5
+    cache: false
+    content-type: text/html
+        
+        

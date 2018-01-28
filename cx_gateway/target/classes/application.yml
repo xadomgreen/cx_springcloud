@@ -9,9 +9,12 @@ spring:
     name: cx-gateway
 zuul:
   routes:
-    cx-rebbon: 
+    cx-rebbon:
       path: /rebbon/**
       service-id: Cx-Ribbon
     cx-feign:
       path: /feign/**
       service-id: cx-feign
+    cx-customer-service:
+      path: /customer/**
+      service-id: cx-customer-service
