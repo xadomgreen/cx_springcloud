@@ -24,3 +24,7 @@ cx_parent/cx_customer_web/target/
 cx_parent/cx_ribbon/.settings/
 cx_config_server/.settings/
 cx_gateway/target/classes/META-INF/maven/cn.com.cx/cx_gateway/pom.properties
+cx_eureka_client/target/classes/META-INF/maven/cn.com.cx/cx_eureka_client/pom.properties
+*.log
+cx_parent/cx_eureka_server/target/classes/META-INF/maven/cn.com.cx/cx_eureka_server/pom.properties
+cx_parent/cx_ribbon/target/classes/META-INF/maven/cn.com.cx/cx_ribbon/pom.properties
